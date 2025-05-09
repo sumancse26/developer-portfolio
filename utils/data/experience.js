@@ -3,12 +3,12 @@ export const experiences = [
     id: 1,
     title: 'Software Engineer',
     company: "Mononsoft Ltd. ( A JMI Group Concern )",
-    duration: "(Dec 2021 - Present)"
+    duration: "(Dec 2024 - Present)"
   },
   {
     id: 2,
-    title: "Self Employed",
-    company: "Code and build something in everyday.",
-    duration: "(Jan 2019 - Present)"
+    title: "Jr. Software Engineer",
+    company: "Mononsoft Ltd. ( A JMI Group Concern )",
+    duration: "(Jan 2021 - Dec 2024)" 
   }
 ]
