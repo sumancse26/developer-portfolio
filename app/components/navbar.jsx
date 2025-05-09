@@ -36,6 +36,24 @@ function Navbar() {
 						</Link>
 					</li>
 					<li>
+						<Link
+							className="block px-4 py-2 no-underline outline-none hover:no-underline"
+							href="/training">
+							<div className={isActive('/training') ? 'text-pink-600' : 'text-sm text-white transition-colors duration-300 hover:text-pink-600'}>
+								TRAININGS
+							</div>
+						</Link>
+					</li>
+					<li>
+						<Link
+							className="block px-4 py-2 no-underline outline-none hover:no-underline"
+							href="/projects">
+							<div className={isActive('/projects') ? 'text-pink-600' : 'text-sm text-white transition-colors duration-300 hover:text-pink-600'}>
+								PROJECTS
+							</div>
+						</Link>
+					</li>
+					<li>
 						<Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/skills">
 							<div className={isActive('/skills') ? 'text-pink-600' : 'text-sm text-white transition-colors duration-300 hover:text-pink-600'}>
 								SKILLS
@@ -58,15 +76,7 @@ function Navbar() {
 							</div>
 						</Link>
 					</li>
-					<li>
-						<Link
-							className="block px-4 py-2 no-underline outline-none hover:no-underline"
-							href="/projects">
-							<div className={isActive('/projects') ? 'text-pink-600' : 'text-sm text-white transition-colors duration-300 hover:text-pink-600'}>
-								PROJECTS
-							</div>
-						</Link>
-					</li>
+					
 				</ul>
 			</div>
 		</nav>
