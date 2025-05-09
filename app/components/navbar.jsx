@@ -1,12 +1,17 @@
-// @flow strict
+"use client";
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 function Navbar() {
+	const pathname = usePathname();
+	const isActive = (path) => {
+		return pathname === path ? true : false;
+	};
 	return (
 		<nav className="bg-transparent">
 			<div className="flex items-center justify-between py-5">
 				<div className="flex flex-shrink-0 items-center">
-					<Link href="/" className=" text-[#16f2b3] text-3xl font-bold">
+					<Link href="/" className="text-[#16f2b3] text-3xl font-bold">
 						SUMAN SARKAR
 					</Link>
 				</div>
@@ -16,7 +21,7 @@ function Navbar() {
 					id="navbar-default">
 					<li>
 						<Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/about">
-							<div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
+							<div className={isActive('/about') ? 'text-pink-600' : 'text-sm text-white transition-colors duration-300 hover:text-pink-600'}>
 								ABOUT
 							</div>
 						</Link>
@@ -25,14 +30,14 @@ function Navbar() {
 						<Link
 							className="block px-4 py-2 no-underline outline-none hover:no-underline"
 							href="/experience">
-							<div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
+							<div className={isActive('/experience') ? 'text-pink-600' : 'text-sm text-white transition-colors duration-300 hover:text-pink-600'}>
 								EXPERIENCE
 							</div>
 						</Link>
 					</li>
 					<li>
 						<Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/skills">
-							<div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
+							<div className={isActive('/skills') ? 'text-pink-600' : 'text-sm text-white transition-colors duration-300 hover:text-pink-600'}>
 								SKILLS
 							</div>
 						</Link>
@@ -41,14 +46,14 @@ function Navbar() {
 						<Link
 							className="block px-4 py-2 no-underline outline-none hover:no-underline"
 							href="/education">
-							<div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
+							<div className={isActive('/education') ? 'text-pink-600' : 'text-sm text-white transition-colors duration-300 hover:text-pink-600'}>
 								EDUCATION
 							</div>
 						</Link>
 					</li>
 					<li>
 						<Link className="block px-4 py-2 no-underline outline-none hover:no-underline" href="/blog">
-							<div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
+							<div className={isActive('/blog') ? 'text-pink-600' : 'text-sm text-white transition-colors duration-300 hover:text-pink-600'}>
 								BLOGS
 							</div>
 						</Link>
@@ -57,7 +62,7 @@ function Navbar() {
 						<Link
 							className="block px-4 py-2 no-underline outline-none hover:no-underline"
 							href="/projects">
-							<div className="text-sm text-white transition-colors duration-300 hover:text-pink-600">
+							<div className={isActive('/projects') ? 'text-pink-600' : 'text-sm text-white transition-colors duration-300 hover:text-pink-600'}>
 								PROJECTS
 							</div>
 						</Link>
