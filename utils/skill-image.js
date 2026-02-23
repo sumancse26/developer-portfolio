@@ -9,6 +9,7 @@ import bootstrap from '/public/svg/skills/bootstrap.svg';
 import bulma from '/public/svg/skills/bulma.svg';
 import c from '/public/svg/skills/c.svg';
 import canva from '/public/svg/skills/canva.svg';
+import cicd from '/public/svg/skills/ci-cd.svg';
 import capacitorjs from '/public/svg/skills/capacitorjs.svg';
 import coffeescript from '/public/svg/skills/coffeescript.svg';
 import cplusplus from '/public/svg/skills/cplusplus.svg';
@@ -225,6 +226,8 @@ export const skillsImage = (skill) => {
       return wolframalpha;
     case 'canva':
       return canva;
+    case 'ci/cd':
+      return cicd;
     default:
       break;
   }

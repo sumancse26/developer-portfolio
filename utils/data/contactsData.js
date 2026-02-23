@@ -9,5 +9,5 @@ export const contactsData = {
     stackOverflow: 'https://www.facebook.com',
     leetcode: "https://leetcode.com/u/suman_sarkar/",
     devUsername: "N/A",
-    resume: "N/A"
+    resume: "/resume.pdf"
 }
