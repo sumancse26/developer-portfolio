@@ -1,15 +1,6 @@
-<p align="center" width="100%">
-    <img height="100" src="https://github.com/said7388/developer-portfolio/assets/77630868/c0064908-cd5f-4751-a77c-eba90a62b55c">
-</p>
+# Developer Portfolio - Md. Suman Sarkar
 
----
-# [Built Portfolio With GitHub ](https://github.com/said7388/github-portfolio)
-
----
-
-# Developer Portfolio
-
-### Are you struggling to create a professional portfolio website? Look no further! You can use the Developer Portfolio template and create your very own personalized portfolio today! My website is designed to be user-friendly and easily customizable, making it perfect for both developers and freelancers.
+This is the personal portfolio website of **Md. Suman Sarkar**, a Software Engineer. It showcases my skills, experience, projects, and education. The website is built using Next.js and is fully responsive.
 
 ---
 
@@ -17,14 +8,11 @@
 
 ![](./public/image/screen.png)
 
-## View live preview [here](https://abusaid.netlify.app/).
-
 ---
 
 ## Table of Contents :scroll:
 
 - [Sections](#sections-bookmark)
-- [Demo](#demo-movie_camera)
 - [Installation](#installation-arrow_down)
 - [Getting Started](#getting-started-dart)
 - [Usage](#usage-joystick)
@@ -63,12 +51,12 @@ git --version
 
 # Getting Started :dart:
 
-### Fork and Clone the repo
+### Clone the repo
 
-To Fork the repo click on the fork button at the top right of the page. Once the repo is forked open your terminal and perform the following commands
+Open your terminal and perform the following commands:
 
 ```
-git clone https://github.com/<YOUR GITHUB USERNAME>/developer-portfolio.git
+git clone https://github.com/sumancse26/developer-portfolio.git
 
 cd developer-portfolio
 ```
@@ -109,27 +97,27 @@ NEXT_PUBLIC_RECAPTCHA_SECRET_KEY = # For captcha verification on contact form
 NEXT_PUBLIC_RECAPTCHA_SITE_KEY =
 ```
 
-### Then, Customize data in the `utils/data` [folder](https://github.com/said7388/developer-portfolio/tree/main/utils/data).
+### Then, Customize data in the `utils/data` folder.
 
-Eg:
+Eg: `utils/data/personal-data.js`
 
 ```javascript
 export const personalData = {
-  name: "ABU SAID",
-  profile: "/profile.png",
-  designation: "Full-Stack Software Developer",
-  description: "My name is ABU SAID....",
-  email: "abusaid7388@gmail.com",
-  phone: "+8801608797655",
-  address: "Dhaka, Bangladesh",
-  github: "https://github.com/said7388",
-  facebook: "https://www.facebook.com/abusaid.riyaz/",
-  linkedIn: "https://www.linkedin.com/in/abu-said-bd/",
-  twitter: "https://twitter.com/said7388",
-  stackOverflow: "https://stackoverflow.com/users/16840768/abu-said",
-  leetcode: "https://leetcode.com/said3812/",
-  devUsername: "said7388",
-  resume: "...",
+    name: 'Md. Suman Sarkar',
+    profile: '/profile.png',
+    designation: 'Software Engineer',
+    description: "I am a motivated and versatile Software Engineer with a passion for creating efficient, scalable, and user-friendly web solutions...",
+    email: 'suman.iu32@gmail.com',
+    phone: '+8801796844288',
+    address: 'Mirpur-2, Dhaka, Bangladesh',
+    github: 'https://github.com/sumancse26',
+    facebook: '',
+    linkedIn: 'https://www.linkedin.com/in/suman-iu/',
+    twitter: '',
+    stackOverflow: '',
+    leetcode: 'https://leetcode.com/u/suman_sarkar/',
+    devUsername: 'N/A',
+    resume: '/resume.pdf'
 };
 ```
 
