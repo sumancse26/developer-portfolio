@@ -2,7 +2,7 @@ export const personalData = {
     name: 'Md. Suman Sarkar',
     profile: '/profile.png',
     designation: 'Software Engineer',
-    description: "I am a motivated and versatile Software Engineer with a passion for creating efficient, scalable, and user-friendly web solutions. With over 3 years of experience in the industry, I have honed my skills in JavaScript and modern web frameworks, successfully delivering robust applications and optimizing existing systems. I thrive in collaborative environments and am eager to tackle challenging projects that drive innovation and business growth.",
+    description: "Software Engineer with 3+ years building full-stack web apps and full ERP systems using Next.js, React, TypeScript, and Node.js with PostgreSQL. I've shipped production solutions in e-learning, e-commerce, inventory management, and ERP—focused on clean, scalable, and user-friendly products.",
     email: 'suman.iu32@gmail.com',
     phone: '+8801796844288',
     address: 'Mirpur-2, Dhaka, Bangladesh',

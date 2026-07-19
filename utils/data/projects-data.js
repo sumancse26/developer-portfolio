@@ -8,11 +8,12 @@ export const projectsData = [
         id: 1,
         name: 'E-learning Platform',
         description:
-            'I have developed a full-stack web application for  a company that provides e-learning solutions. I created the UI using NextJS, Tailwind CSS, and TypeScript. The app supports multiple languages and currencies. I developed the API using Nest.js, PostGreSQL, and Node Mailer. I deployed the app to live server.',
+            'A production-grade e-learning platform engineered for a corporate training provider, delivering multilingual and multi-currency course experiences. I built a responsive, accessible frontend with Next.js, TypeScript, and Tailwind CSS, and developed a robust NestJS API backed by PostgreSQL with transactional email notifications. The solution was containerized and deployed to a live server with CI/CD for reliable, scalable delivery.',
         tools: ['NextJS', 'Tailwind CSS', 'Google Maps', 'TypeScript', 'PostgreSQL', 'Vercel', 'Gmail Passkey'],
         role: 'Full Stack Developer',
         code: '',
         demo: 'https://cyberneticsitbd.com/',
+        liveLink: 'https://cyberneticsitbd.com/',
         image: crefin
     },
     {
@@ -20,22 +21,28 @@ export const projectsData = [
         name: 'Multi-vendor E-commerce App',
         //description for ecommerce app
         description:
-            'I have designed and developed a full-stack E-commerce web app. I created the UI using NextJS, Typescript, TailwindCSS, Google Maps. The app supports multiple languages and currencies. I developed the API using Next.js, PostgreSQL, Prisma ORM, Vercel, and Nodemailer. I deployed the app on live server.',
+            'A scalable multi-vendor marketplace enabling numerous sellers to list and manage products from a unified storefront. I designed and built the customer-facing application with Next.js, TypeScript, Tailwind CSS, and Google Maps integration, supporting localization across languages and currencies. The backend leverages a Next.js API with Prisma ORM on PostgreSQL, Nodemailer for transactional messaging, and Vercel for zero-downtime deployments.',
         tools: ['NextJS', 'Tailwind CSS', 'Google Maps', 'TypeScript', 'PostgreSQL', 'Vercel', 'Gmail Passkey'],
         role: 'Full Stack Developer',
         code: '',
         demo: 'https://discountshop.pagoole.com/',
+        liveLink: 'https://discountshop.pagoole.com/',
         image: crefin
     },
     {
         id: 3,
         name: 'Inventory Management System',
         description:
-            'I have developed a full-stack web application for  a company that provides inventory management solutions. I created the UI using React, Next, Tailwind CSS, and SCSS. The app supports multiple languages and currencies. I developed the API using Next.js, PostGreSQL, and Node Mailer. I deployed the app to Vercel.',
+            'A comprehensive inventory management system that streamlines stock tracking, order processing, and reporting for growing businesses. I developed a performant, maintainable frontend using React, Next.js, Tailwind CSS, and SCSS, with an internationalized interface supporting multiple languages and currencies. The backend is powered by a Next.js API and PostgreSQL with Nodemailer notifications, deployed seamlessly to Vercel.',
         tools: ['NextJS', 'Tailwind CSS', 'TypeScript', 'PostgreSQL', 'Vercel', 'Gmail Passkey'],
         role: 'Full Stack Developer',
         code: '',
-        demo: 'https://sales-inventory-two.vercel.app/login',
+        demo: 'https://emojud.vercel.app',
+        liveLink: 'https://emojud.vercel.app',
+        credentials: {
+            username: 'suman',
+            password: '12345678'
+        },
         image: crefin
     }
 ];

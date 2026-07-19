@@ -45,6 +45,9 @@ import microsoftoffice from '/public/svg/skills/microsoftoffice.svg';
 import mongoDB from '/public/svg/skills/mongoDB.svg';
 import mysql from '/public/svg/skills/mysql.svg';
 import nextJS from '/public/svg/skills/nextJS.svg';
+import nodejs from '/public/svg/skills/nodejs.svg';
+import express from '/public/svg/skills/express.svg';
+import nestjs from '/public/svg/skills/nestjs.svg';
 import nginx from '/public/svg/skills/nginx.svg';
 import numpy from '/public/svg/skills/numpy.svg';
 import nuxtJS from '/public/svg/skills/nuxtJS.svg';
@@ -100,6 +103,12 @@ export const skillsImage = (skill) => {
       return javascript;
     case 'next js':
       return nextJS;
+    case 'node js':
+      return nodejs;
+    case 'express':
+      return express;
+    case 'nest js':
+      return nestjs;
     case 'nuxt js':
       return nuxtJS;
     case 'react':

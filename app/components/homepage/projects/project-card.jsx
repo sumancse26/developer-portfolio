@@ -70,6 +70,33 @@ function ProjectCard({ project }) {
             <span className="text-cyan-400">{' ' + project.description}</span>
             <span className="text-gray-400">,</span>
           </div>
+          {
+            project.liveLink &&
+            <div>
+              <span className="ml-4 lg:ml-8 mr-2 text-white">liveLink:</span>
+              <span className="text-gray-400">{`'`}</span>
+              <Link href={project.liveLink} target='_blank' className="text-amber-300 hover:text-violet-500 transition-colors">
+                {project.liveLink}
+              </Link>
+              <span className="text-gray-400">{`',`}</span>
+            </div>
+          }
+          {
+            project.credentials &&
+            <div>
+              <span className="ml-4 lg:ml-8 mr-2 text-white">credentials:</span>
+              <span className="text-gray-400">{'{'}</span>
+              <span className="ml-4 lg:ml-8 mr-2 text-white">username:</span>
+              <span className="text-gray-400">{`'`}</span>
+              <span className="text-amber-300">{project.credentials.username}</span>
+              <span className="text-gray-400">{`',`}</span>
+              <span className="ml-4 lg:ml-8 mr-2 text-white">password:</span>
+              <span className="text-gray-400">{`'`}</span>
+              <span className="text-amber-300">{project.credentials.password}</span>
+              <span className="text-gray-400">{`'}`}</span>
+              <span className="text-gray-400">,</span>
+            </div>
+          }
           <div><span className="text-gray-400">{`};`}</span></div>
         </code>
       </div>
