@@ -50,12 +50,11 @@ export const projectsData = [
         name: 'Real Time Trading Terminal',
         description:
             'Trading Terminal is a browser-based cryptocurrency derivatives platform that provides live market monitoring, interactive charts, order-book analysis, simulated trading, portfolio tracking, and risk analytics in one professional workspace.',
-        tools: ['React', 'TypeScript', 'Vite', 'Zustand', 'TanStack Query', 'Web Socket'],
+        tools: ['React', 'TypeScript', 'Vite', 'Zustand', 'TanStack Query', 'Web Socket', 'Web Api'],
         role: 'Front End Developer',
         code: '',
         demo: 'https://real-time-trading-terminal.netlify.app/',
         liveLink: 'https://real-time-trading-terminal.netlify.app/',
-
         image: crefin
     }
 ];
