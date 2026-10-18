@@ -1,30 +1,62 @@
-// @flow strict
 import Link from 'next/link';
-import { CgGitFork } from 'react-icons/cg';
-import { IoStar } from 'react-icons/io5';
+import { personalData } from '@/utils/data/personal-data';
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
+import { SiLeetcode } from 'react-icons/si';
 
 function Footer() {
-	return (
-		<div className="relative border-t bg-[#0d1224] border-[#353951] text-white">
-			<div className="mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem] py-6 lg:py-10">
-				<div className="flex justify-center -z-40">
-					<div className="absolute top-0 h-[1px] w-1/2  bg-gradient-to-r from-transparent via-violet-500 to-transparent"></div>
-				</div>
-				<div className="flex flex-col md:flex-row items-center justify-between">
-					<p className="text-sm">
-						© Developer Portfolio by{' '}
-						<Link
-							target="_blank"
-							href="https://www.linkedin.com/in/suman-iu/"
-							className="text-[#16f2b3]">
-							Suman Sarkar
-						</Link>
-					</p>
+  return (
+    <footer className="border-t border-slate-200 bg-white text-slate-700 py-10 mt-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        {/* Brand & Copyright */}
+        <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
+          <p className="text-sm font-semibold text-slate-900">
+            {personalData.name}{' '}
+            <span className="text-slate-500 font-normal">&mdash; Fullstack Software Engineer</span>
+          </p>
+          <p className="text-xs text-slate-500 mt-1">
+            &copy; {new Date().getFullYear()} All rights reserved. Built with Next.js, React &amp; Tailwind CSS.
+          </p>
+        </div>
 
-				</div>
-			</div>
-		</div>
-	);
+        {/* Social Icons */}
+        <div className="flex items-center gap-3">
+          {personalData.github && (
+            <Link
+              href={personalData.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-lg bg-slate-50 border border-slate-200 text-slate-600 hover:text-slate-900 hover:border-slate-300 transition-colors shadow-xs"
+              aria-label="GitHub"
+            >
+              <BsGithub size={16} />
+            </Link>
+          )}
+          {personalData.linkedIn && (
+            <Link
+              href={personalData.linkedIn}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-lg bg-slate-50 border border-slate-200 text-slate-600 hover:text-[#0077b5] hover:border-[#0077b5]/40 transition-colors shadow-xs"
+              aria-label="LinkedIn"
+            >
+              <BsLinkedin size={16} />
+            </Link>
+          )}
+          {personalData.leetcode && (
+            <Link
+              href={personalData.leetcode}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-lg bg-slate-50 border border-slate-200 text-slate-600 hover:text-[#ffa116] hover:border-[#ffa116]/40 transition-colors shadow-xs"
+              aria-label="LeetCode"
+            >
+              <SiLeetcode size={16} />
+            </Link>
+          )}
+        </div>
+      </div>
+    </footer>
+  );
 }
 
 export default Footer;

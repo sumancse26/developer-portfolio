@@ -1,32 +1,57 @@
 import { GoogleTagManager } from '@next/third-parties/google';
 import { Inter } from 'next/font/google';
-import Head from 'next/head';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Footer from './components/footer';
 import Navbar from './components/navbar';
 import './css/card.scss';
 import './css/globals.scss';
+
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Portfolio of Suman Sarkar - Software Developer',
-  description: 'This is the portfolio of Suman Sarkar. I am a full stack developer and a self taught developer. I love to learn new things and I am always open to collaborating with others. I am a quick learner and I am always looking for new challenges.',
-  image: "/favicon.ico"
+  title: 'Md. Suman Sarkar | Fullstack Software Engineer',
+  description:
+    'Portfolio of Md. Suman Sarkar — Fullstack Software Engineer with 3+ years experience engineering enterprise ERP platforms, scalable cloud inventory systems, and modern web apps using Next.js, React, TypeScript, Node.js, and PostgreSQL.',
+  keywords: [
+    'Suman Sarkar',
+    'Fullstack Software Engineer',
+    'Next.js Developer',
+    'React Developer',
+    'TypeScript',
+    'Node.js',
+    'NestJS',
+    'PostgreSQL',
+    'Prisma',
+    'Enterprise ERP Developer',
+    'Bangladesh Software Engineer'
+  ],
+  authors: [{ name: 'Md. Suman Sarkar' }],
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/favicon.png', type: 'image/png' },
+      { url: '/profile-avatar.png', type: 'image/png' }
+    ],
+    shortcut: '/favicon.ico',
+    apple: '/apple-icon.png'
+  }
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ToastContainer />
-        <main className="min-h-screen relative mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem] text-white">
+        <ToastContainer theme="light" position="bottom-right" autoClose={3000} />
+        <main className="min-h-screen relative mx-auto px-4 sm:px-8 lg:max-w-7xl text-slate-900">
           <Navbar />
           {children}
         </main>
         <Footer />
       </body>
-      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM} />
+      {process.env.NEXT_PUBLIC_GTM && (
+        <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM} />
+      )}
     </html>
-  )
-};
+  );
+}
