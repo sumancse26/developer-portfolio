@@ -12,7 +12,6 @@ const NAV_ITEMS = [
   { label: 'Skills', href: '#skills', pageHref: '/#skills' },
   { label: 'Projects', href: '#projects', pageHref: '/#projects' },
   { label: 'Education', href: '#education', pageHref: '/#education' },
-  { label: 'Insights', href: '#blogs', pageHref: '/#blogs' },
   { label: 'Contact', href: '#contact', pageHref: '/#contact' }
 ];
 

@@ -57,8 +57,8 @@ export const projectsData = [
         tools: ['NextJS', 'React', 'TypeScript', 'PostgreSQL', 'Tailwind CSS', 'SCSS', 'Vercel'],
         role: 'Full Stack Developer',
         code: '',
-        demo: 'https://emojud-inventory.vercel.app/',
-        liveLink: 'https://emojud-inventory.vercel.app/',
+        demo: 'https://emojud.netlify.app/',
+        liveLink: 'https://emojud.netlify.app/',
         credentials: {
             username: 'suman',
             password: '12345678'

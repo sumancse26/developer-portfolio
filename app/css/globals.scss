@@ -93,3 +93,18 @@ body::before {
   transform: translateY(-1px);
   box-shadow: 0 6px 20px 0 rgba(79, 70, 229, 0.4);
 }
+
+@keyframes pulseSlow {
+  0%, 100% {
+    opacity: 0.15;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.28;
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulseSlow 7s ease-in-out infinite;
+}
