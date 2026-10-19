@@ -5,6 +5,5 @@ export const contactsData = {
     github: 'https://github.com/sumancse26',
     linkedIn: 'https://www.linkedin.com/in/suman-iu/',
     leetcode: 'https://leetcode.com/u/suman_sarkar/',
-    devUsername: 'N/A',
     resume: '/resume.pdf'
 };

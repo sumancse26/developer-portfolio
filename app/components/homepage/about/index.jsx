@@ -282,7 +282,7 @@ function AboutSection() {
                   <span className="absolute -left-[5px] top-1.5 size-2 rounded-full bg-indigo-600"></span>
                   <p className="text-slate-900 font-bold text-sm">Software Engineer</p>
                   <p className="text-slate-500 text-xs mt-0.5">
-                    Mononsoft Ltd. (JMI Group) &bull; Dec 2024 - Present
+                    Mononsoft Ltd. (JMI Group) &bull; January 2025 - Present
                   </p>
                 </li>
                 <li className="relative pl-4 border-l-2 border-slate-200">

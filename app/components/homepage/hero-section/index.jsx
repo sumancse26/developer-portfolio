@@ -54,14 +54,30 @@ function HeroSection() {
           Md. Suman <span className="gradient-text">Sarkar</span>
         </h1>
 
-        {/* Focused, Crisp Designation & Bio */}
-        <p className="mt-4 sm:mt-5 text-xl sm:text-2xl lg:text-3xl font-semibold text-slate-800 tracking-tight">
+        {/* Core Fullstack Designation & Bio */}
+        <p className="mt-4 sm:mt-5 text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 tracking-tight">
           Fullstack Software Engineer
         </p>
 
         <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed font-normal">
-          Building high-performance ERP systems, real-time web applications, and scalable backend services with <span className="text-slate-900 font-medium">Next.js, TypeScript, NestJS, and PostgreSQL</span>.
+          Specializing in <span className="text-slate-900 font-semibold">Next.js &amp; React (Latest)</span>, high-performance <span className="text-slate-900 font-semibold">caching strategies</span>, and advanced <span className="text-slate-900 font-semibold">memoization techniques</span> with type-safe Node.js and PostgreSQL backends.
         </p>
+
+        {/* Core Competency Chips */}
+        <div className="flex flex-wrap items-center justify-center gap-2 mt-4 text-xs font-mono text-slate-600">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 border border-slate-200">
+            <span className="h-1.5 w-1.5 rounded-full bg-indigo-500"></span>
+            <span>Next.js &amp; React (Latest)</span>
+          </span>
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 border border-slate-200">
+            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
+            <span>Advanced Caching &amp; Memoization</span>
+          </span>
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 border border-slate-200">
+            <span className="h-1.5 w-1.5 rounded-full bg-sky-500"></span>
+            <span>Fullstack Type Safety &amp; SQL</span>
+          </span>
+        </div>
 
         {/* Primary CTAs */}
         <div className="flex flex-wrap items-center justify-center gap-3 mt-8 w-full sm:w-auto">
